@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+
+nav{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    position: fixed;
+    z-index: 5;
+    height: 110px;
+    width: 100%;
+    border-bottom: 10px solid #00c9ff;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 125px;
+    cursor: pointer;
+}
+
+.nav-content{
+    margin: auto;
+    padding: 0 30px;
+}
+
+nav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu-list{
+    display: inline-flex;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 15px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+}
+
+.menu-list li a:hover{
+    color: #E3759B;
+}
+
+.menu-list li a::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    background: #E3759B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menu-list li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a#connexion{
+    color: #E3759B;
+    transition: 0.4s;
+}
+
+a#connexion:hover{
+    color: #fff;
+}
+
+.icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 868px){
+    .icon{
+        display: block;
+    }
+
+    .icon.hide{
+        display: none;
+    }
+
+    nav .menu-list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #00c9ff;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav .menu-list.active{
+        left: 0%;
+    }
+
+    nav .menu-list li{
+        margin-top: 50px;
+    }
+
+    nav .menu-list li a{
+        font-size: 20px;
+        color: #fff;
+
+    }    
+}
