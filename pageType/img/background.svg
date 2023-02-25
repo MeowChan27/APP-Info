@@ -1,0 +1,23 @@
+<!--******************************************************
+* APP - Projet Système Numérique - Composante Informatique
+* ISEP - A1 - G7C
+* Semestre 2
+* Auteur : - MAILLEY_Charles 
+           - MAIZA_Fares
+           - MARTINEZ_Eliot
+           - PAVIOT-ADET_Flore
+           - SPASOJEVIC_Fanny
+           - VINGADASSAMY_Prasanaa
+* Date de rendu  : 05/06/2023
+********************************************************-->
+
+<svg width="1440" height="1545" viewBox="0 0 1440 1545" fill="none" preserveAspectRatio='none' version='1.1' xmlns="http://www.w3.org/2000/svg">
+	<!-- Partie milieu bas -->
+	<rect fill="#0A0949" y="570" width="1440" height="970"/>
+	<!-- Partie milieu haut -->
+	<path fill="#211265" d="M1440 730C1319.67 730 1199.21 729.875 1080 710.952C960 691.905 840 653.81 720 653.81C600 653.81 480 691.905 360 691.905C235.562 691.905 117.226 652.929 0 615.714V0C480 0 960 0 1440 0V730Z"/>
+	<!-- Partie bas droite -->
+	<path fill="#6C37EE" d="M1082.67 1330C868.936 1330 956.571 1432.94 720 1480L1440 1505V1330H1082.67Z"/>
+	<!-- Partie bas gauche -->
+	<path fill="#211265" d="M720 1480C528.501 1480 253.982 1402.94 0 1375V1545H1440V1505L720 1480Z"/>
+</svg>
