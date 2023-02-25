@@ -1,0 +1,185 @@
+/*********************************************************
+* APP - Projet Système Numérique - Composante Informatique
+* ISEP - A1 - G7C
+* Semestre 2
+* Auteur : - MAILLEY_Charles 
+           - MAIZA_Fares
+           - MARTINEZ_Eliot
+           - PAVIOT-ADET_Flore
+           - SPASOJEVIC_Fanny
+           - VINGADASSAMY_Prasanaa
+* Date de rendu  : 05/06/2023
+*********************************************************/
+
+
+
+/***************-----*************** GENERAL ***************-----***************/
+
+* { /* Settings general de la page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins"; /*Ne fonctionne pas avec le fichier en local*/
+    /* Couleur de la chartre graphique */
+    --myColor-main-base: #211265;
+    --myColor-main-light: #6C37EE;
+    --myColor-main-dack: #0A0949;
+    --myColor-buttonLogin: #F6593E;
+    --myColor-3-1: #56E5FB;
+    --myColor-2-2: #18A7F9;
+    /* Other color */
+    --myColor-fontColor-main: #ffffff;
+}
+
+
+/***************-----*************** HEADER ***************-----***************/
+
+.header_all { /* Settings general du header */
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--myColor-main-base);
+    align-items: center;
+}
+
+.header_logo { /* Taille du logo du header */
+    width: 70px;
+    padding: 5px;
+}
+
+.header_logo path {
+    fill: black;
+}
+
+.header_all ul li { /* Settings des blocs du header*/
+    display: inline-block;
+    padding: 2% 20px;
+} 
+.header_all ul li:hover {background-color: #2779BF;}
+
+.header_all a { /* Settings des liens du header*/
+    color: var(--myColor-fontColor-main);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+} 
+
+.header_log { /* Settings des liens du header*/ 
+    background-color: var(--myColor-buttonLogin);
+    border-radius: 25px;
+    margin: 10px 0;
+} 
+
+
+
+/***************-----*************** FOOTER ***************-----***************/
+
+.footer {
+    background-color: var(--myColor-main-base);
+    padding: 10px;
+    /* Pour bloquer le footer au bas de l'ecran si besoin
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    */
+}
+
+.footer_icon {
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer_top {
+    color: var(--myColor-fontColor-main);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.footer_top h3 {
+    display: inline-block;
+    border-bottom: 3px solid var(--myColor-fontColor-main);;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.footer_top a {
+    color: var(--myColor-fontColor-main);;
+    text-decoration: none;
+}
+
+.footer_top li {display: block;}
+
+.footer_bottom {
+    color: #c0bbbb;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 11px;
+}
+
+
+
+/***************-----*************** FOOTER NUMBERPHONE TICKET ***************-----***************/
+
+.numberPhone_all {
+    background-color: var(--myColor-main-base);
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.numberPhone_left {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 0px;
+    border-top  : 25px solid white;
+    border-bottom  : 25px solid white;
+    border-right : 20px solid transparent;
+    padding-right: 10px;
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.numberPhone_right {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    padding-right : 10px;
+    color: white;
+    font-size: 8px;
+}
+
+
+  
+/***************-----*************** Backgroud ***************-----***************/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    /*.*/
+.main_all {
+    background-image: url("img/background.svg");
+   /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1295%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='var(--myColor-main-base)'%3e%3c/rect%3e%3cpath d='M 0%2c211 C 128%2c181 384%2c45 640%2c61 C 896%2c77 1024%2c279.4 1280%2c291 C 1536%2c302.6 1792%2c153.4 1920%2c119L1920 1080L0 1080z' fill='rgba(10%2c 9%2c 73%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c392 C 128%2c441 384%2c609.8 640%2c637 C 896%2c664.2 1024%2c524.8 1280%2c528 C 1536%2c531.2 1792%2c628 1920%2c653L1920 1080L0 1080z' fill='rgba(108%2c 55%2c 238%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c1051 C 192%2c998.8 576%2c786.4 960%2c790 C 1344%2c793.6 1728%2c1013.2 1920%2c1069L1920 1080L0 1080z' fill='rgba(33%2c 18%2c 101%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1295'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    *//* Bg avec une variable qui fonctionne
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1295%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='var(--myColor-main-base)'%3e%3c/rect%3e%3cpath d='M 0%2c211 C 128%2c181 384%2c45 640%2c61 C 896%2c77 1024%2c279.4 1280%2c291 C 1536%2c302.6 1792%2c153.4 1920%2c119L1920 1080L0 1080z' fill='rgba(10%2c 9%2c 73%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c392 C 128%2c441 384%2c609.8 640%2c637 C 896%2c664.2 1024%2c524.8 1280%2c528 C 1536%2c531.2 1792%2c628 1920%2c653L1920 1080L0 1080z' fill='rgba(108%2c 55%2c 238%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c1051 C 192%2c998.8 576%2c786.4 960%2c790 C 1344%2c793.6 1728%2c1013.2 1920%2c1069L1920 1080L0 1080z' fill='rgba(33%2c 18%2c 101%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1295'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1295%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='var(--myColor-main-base)'%3e%3c/rect%3e%3cpath d='M 0%2c211 C 128%2c181 384%2c45 640%2c61 C 896%2c77 1024%2c279.4 1280%2c291 C 1536%2c302.6 1792%2c153.4 1920%2c119L1920 1080L0 1080z' fill='var(--myColor-main-dark)'%3e%3c/path%3e%3cpath d='M 0%2c392 C 128%2c441 384%2c609.8 640%2c637 C 896%2c664.2 1024%2c524.8 1280%2c528 C 1536%2c531.2 1792%2c628 1920%2c653L1920 1080L0 1080z' fill='var(--myColor-main-light)'%3e%3c/path%3e%3cpath d='M 0%2c1051 C 192%2c998.8 576%2c786.4 960%2c790 C 1344%2c793.6 1728%2c1013.2 1920%2c1069L1920 1080L0 1080z' fill='var(--myColor-main-base)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1295'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    Bg avec trois variables qui ne fonctionnent pas*/
+    background-size: 100% 50%;
+    height: auto; 
+    color: var(--myColor-fontColor-main);
+    height: 522px; /*522*/
+
+}
+
+body {/*Suppression du blanc de bas de page en cas de zoom*/
+    background-color: var(--myColor-main-base);
+}
+ 
+  
+
