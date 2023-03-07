@@ -14,29 +14,28 @@
 <footer class="footer">
     <div class="footer_top">
         <div>
-        <h3>Nous contacter</h3>
+        <h3><?php echo $translat['footer_p1_title']; ?></h3>
         <ul>
             <li>
             <div class="numberPhone_all">
-                <div class="numberPhone_left">11 22 33 44 55</div>
-                <div class="numberPhone_right">Services gratuit <br>+ prix appel</div>
+                <div class="numberPhone_left"><?php echo $translat['footer_p1_txt1_1']; ?></div>
+                <div class="numberPhone_right"><?php echo $translat['footer_p1_txt1_2']; ?></div>
             </div>
             </li>
-            <li><i class="bx bx-chevron-right"></i> <a href="">telephone : ... prix : gratuit</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="">service@appnea.fr</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href=""><?php echo $translat['footer_p1_txt2']; ?></a></li>
         </ul>
         </div>
         <div>
-        <h3>Aide et mentions</h3>
+        <h3><?php echo $translat['footer_p2_title']; ?></h3>
         <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="">CGV & Mentions légales</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="">Données personnelles & Cookies</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="">Aide</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="">Privacy policy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href=""><?php echo $translat['footer_p2_txt1']; ?></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href=""><?php echo $translat['footer_p2_txt2']; ?></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href=""><?php echo $translat['footer_p2_txt3']; ?></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href=""><?php echo $translat['footer_p2_txt4']; ?></a></li>
         </ul>
         </div>
         <div>
-        <h3>Retrouvez-nous sur </h3>
+        <h3><?php echo $translat['footer_p3_title']; ?></h3>
         <ul>
             <a class="footer_icon" href="#"><i class="bx bxl-facebook"></i></a>
             <a class="footer_icon" href="#"><i class="bx bxl-instagram"></i></a>
@@ -44,6 +43,6 @@
         </ul>
         </div>
     </div>
-    <div class="footer_bottom"><i class='bx bx-copyright' ></i> 2022 Appnea — Tous droits réservés.</div>
+    <div class="footer_bottom"><i class='bx bx-copyright' ></i><?php echo $translat['footer_p4']; ?></div>
 </footer>
 

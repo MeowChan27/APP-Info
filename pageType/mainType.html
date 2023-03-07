@@ -20,15 +20,28 @@
     <link rel="icon" type="image/x-icon" href="img/Logo_Appea-color.svg">
     <link rel="stylesheet" href="css/mainType.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <script src="text.js"></script>
+    <script src="text.js"></script>
+
+    <link href="vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header class="header_all">
-      <a href="main.html"><img class="header_logo" src="img/Logo_Appea-grey.svg" alt="Logo APPNEA">APPNEA</a>
-      <ul>
-        <li><a href="">Nos produits</a></li>
+      <div class="header_left">
+        <a class="header_title" href="mainType.html"><img class="header_logo" src="img/Logo_Appea-grey.svg" alt="Logo APPNEA">APPNEA</a>
+        <nav class="header_language"> 
+					<img class="header_flag" src="vendors/icon-flag/fr.svg" alt="Francais">
+					<ul class="header_listFlag">
+						<li><a href="#"><img class="header_flag" src="vendors/icon-flag/fr.svg" alt="Francais"></a></li> 
+						<li><a href="#" ><img class="header_flag" src="vendors/icon-flag/us.svg" alt="English"></a></li> 
+					</ul> 
+			  </nav>
+      </div>
+      <ul class="header_right">
+        <li><a href="">Nos produits <script>echo header</script> </a></li>
         <li><a href="">Les capteurs</a></li>
         <li><a href="">Notre équipe</a></li>
         <li><a href="">FAQ</a></li>

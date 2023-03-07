@@ -32,31 +32,57 @@
 }
 
 
+
+/***************-----*************** Backgroud ***************-----***************/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    /*.*/
+.main_all {
+    background-image: url("../img/background.svg");
+    background-size: 100% 50%;
+    height: auto; 
+    color: var(--myColor-fontColor-main);
+    height: 430px; /*522*/
+
+}
+
+body {/*Suppression du blanc de bas de page en cas de zoom*/
+    background-color: var(--myColor-main-base);
+}
+ 
+
+
 /***************-----*************** HEADER ***************-----***************/
 
 .header_all { /* Settings general du header */
     display: flex;
     justify-content: space-between;
-    background-color: var(--myColor-main-base);
     align-items: center;
+    background-color: var(--myColor-main-base);
 }
 
 .header_logo { /* Taille du logo du header */
     width: 70px;
-    padding: 5px;
+    margin-right: 15px;
 }
 
 .header_logo path {
     fill: black;
 }
 
-.header_all ul li { /* Settings des blocs du header*/
+.header_right li { /* Settings des blocs du header*/
     display: inline-block;
     padding: 2% 20px;
 } 
-.header_all ul li:hover {background-color: #2779BF;}
+.header_right li:hover {background-color: #2779BF;}
 
-.header_all a { /* Settings des liens du header*/
+.header_right a { /* Settings des liens du header*/
+    color: var(--myColor-fontColor-main);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.header_title { /* Settings des liens du header*/
     color: var(--myColor-fontColor-main);
     text-decoration: none;
     text-transform: uppercase;
@@ -69,6 +95,45 @@
     border-radius: 25px;
     margin: 10px 0;
 } 
+
+.header_left {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header_flag {
+    width: 60px;
+    border-radius: 100%;
+}
+
+.header_language {
+	position: relative;
+	color: #FFF;
+    float: right;
+    margin-left: 15px;
+}
+
+.header_language ul {
+	display: none;
+}	
+.header_language:hover ul{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+}
+
+.header_language ul li {
+    padding-top: 5px;
+	color: #222538;
+    display: inline-block;
+}
+.header_language ul li:hover a {
+    background-color: #2779BF;
+    border-radius: 50%;
+}
 
 
 
@@ -158,23 +223,5 @@
     color: white;
     font-size: 8px;
 }
-
-
-  
-/***************-----*************** Backgroud ***************-----***************/
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    /*.*/
-.main_all {
-    background-image: url("../img/background.svg");
-    background-size: 100% 50%;
-    height: auto; 
-    color: var(--myColor-fontColor-main);
-    /*height: 1000px; /*522*/
-
-}
-
-body {/*Suppression du blanc de bas de page en cas de zoom*/
-    background-color: var(--myColor-main-base);
-}
- 
   
 
